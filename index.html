@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>前端工程师简历</title>
+	<link rel="shortcut icon" href="./favicon.ico" />
+	<meta name="keywords" content="个人简历,前端工程师">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+  <script src="./lib/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+
+</head>
+<body ondragstart="return false">
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+    	<div class="swiper-slide page1 swiper-no-swiping">
+    		<img src="./images/01.jpg" alt=""><span class="user-img"></span>
+        <span class="oneTitle">Hello!</span>
+        <p class="oneText">
+            <span>我叫吴华庚</span><br>
+            <span>一名前端开发工程师</span><br>
+            <span class="email">287818624@qq.com</span>     
+        </p>
+    	</div>
+    	<div class="swiper-slide page2 swiper-no-swiping">
+    		<img src="./images/2.jpg" alt="">
+        <span class="twoTitle">About me:</span>
+        <p class="twoText">
+          <span>年龄: 28 坐标: 厦门</span><br><br>
+          <span>因为对前端很感兴趣,</span><br>
+          <span>所以自学了前端,</span><br>
+          <span>是个代码强迫症患者.</span><br>
+          <span>负责过整个页面的前端开发,</span><br>
+          <span>还有移动端页面,PC端页面,商城,企业网站,视频,</span><br>
+          <span>音频,评论,地图等都有涉及.</span><br>
+          <span>有耐心,热爱编程,执行力,学习能力棒棒哒!</span>
+        </p>
+    	</div>
+    	<div class="swiper-slide page3 swiper-no-swiping">
+    		<img src="./images/3.jpg" alt="">
+        <div class="threeTitle">Skills:</div>
+        <div class="threeText">
+          <div class="block">HTML / CSS</div>
+          <div class="block">JavaScript</div>
+          <div class="block">Ajax</div>
+          <div class="block">React</div>
+          <div class="block">Vue 等等</div>
+        </div>
+    	</div>
+    	<div class="swiper-slide page4 swiper-no-swiping">
+    		<img src="./images/4.jpg" alt="">
+        <div class="fourTitle">Experience:</div>
+        <div class="fourText">
+          <div class="fourWrap">
+            <ul class="item-list">
+              <li class="item">腾讯</li>
+              <li class="item">新浪</li>
+              <li class="item">网易</li>
+              <li class="item">百度</li>
+              <li class="item">淘宝</li>
+              <li class="item">京东</li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+    	<div class="swiper-slide page5 swiper-no-swiping">
+    		<img src="./images/5.jpg" alt="">
+        <div class="fiveTitle">Demo:</div>
+        <div class="fiveText">
+          <div class="fiveWrap">
+            <ul>
+              <li class="pic1">
+                <div class="txt">
+                  <p class="p1">微信小程序</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="pic2">
+                <div class="txt">
+                  <p class="p2">网页小游戏</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="pic3">
+                <div class="txt">
+                  <p class="p3">淘宝网首页</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="pic4">
+                <div class="txt">
+                  <p class="p4">腾讯微博</p>
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+    	<div class="swiper-slide page6 swiper-no-swiping">
+    		<img src="./images/6.jpg" alt="">
+        <div class="sixTitle">Contact me:</div>
+        <div class="sixText">
+            <div class="line1"></div>
+            <span>学习是一个充实愉悦的过程</span><br>
+            <span>喜欢尝试，期待新鲜事物</span><br>
+            <span>前端即兴趣，兴趣即未来</span><br>
+            <span>行路有良友，便是捷径</span><br>
+            <span>期待有机会与您共事！</span>
+            <div class="line2"></div>
+        </div>
+    	</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script>
+    // Swiper
+  	var swiper = new Swiper(".swiper-container",{
+  		noSwiping: true,
+		  direction:'vertical',
+		  pagination: {
+    		el: '.swiper-pagination',
+    		clickable:true
+  		},
+  		mousewheel:true,
+    })
+    //旋转展示
+    var items = document.querySelectorAll(".item");
+    var deg = 360/items.length;
+    var r = Math.PI*(deg/360);
+    var zOffset = (items[0].offsetWidth/2)/Math.tan(r);
+    for(var i = 0; i<items.length;i++){
+    var item = items[i];
+    item.style.transform = "rotateY("+i*deg+"deg) translateZ("+(zOffset+20)+"px)";
+    }
+    var itemList = document.querySelector(".item-list");
+    var fourWrap = document.querySelector(".fourWrap");
+    var ulDeg = 0;
+    fourWrap.addEventListener("click", function(){
+      ulDeg+=deg;
+      itemList.style.transform = "rotateY("+ulDeg+"deg)";
+    });
+    //手风琴
+    var liFive = $(".fiveWrap ul li");
+    liFive.on('mouseover',function() {
+      $(this).css({width: '600px'}).siblings().css({width: '100px'});
+    });
+  </script>
+</body>
+</html>
