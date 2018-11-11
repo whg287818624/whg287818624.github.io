@@ -5,12 +5,12 @@
 	<title>前端工程师简历</title>
 	<link rel="shortcut icon" href="./favicon.ico" />
 	<meta name="keywords" content="个人简历,前端工程师">
+  <!-- 个人CSS -->
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <!-- swiper.css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
-  <script src="./lib/wow.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
-  <script src="./lib/jquery-3.3.1.min.js"></script>
 
 </head>
 <body ondragstart="return false">
@@ -18,7 +18,7 @@
     <div class="swiper-wrapper">
     	<div class="swiper-slide page1 "><!-- swiper-no-swiping -->
     		<img src="./images/01.jpg" alt=""><span class="user-img"></span>
-        <span class="oneTitle">Hello!</span>
+        <span class="oneTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Hello!</span>
         <p class="oneText">
             <span>我叫吴华庚</span><br>
             <span>一名前端开发工程师</span><br>
@@ -27,8 +27,8 @@
     	</div>
     	<div class="swiper-slide page2 ">
     		<img src="./images/2.jpg" alt="">
-        <span class="twoTitle">About me:</span>
-        <p class="twoText">
+        <span class="twoTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">About me:</span>
+        <p class="twoText ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s">
           <span>年龄: 28 坐标: 厦门</span><br><br>
           <span>因为对前端很感兴趣,</span><br>
           <span>所以自学了前端,</span><br>
@@ -41,9 +41,9 @@
     	</div>
     	<div class="swiper-slide page3 ">
     		<img src="./images/3.jpg" alt="">
-        <div class="threeTitle">Skills:</div>
-        <div class="threeText">
-          <div class="block">HTML / CSS</div>
+        <div class="threeTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Skills:</div>
+        <div class="threeText ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="2s">
+          <div class="block ">HTML / CSS</div>
           <div class="block">JavaScript</div>
           <div class="block">Ajax</div>
           <div class="block">React</div>
@@ -52,7 +52,7 @@
     	</div>
     	<div class="swiper-slide page4 ">
     		<img src="./images/4.jpg" alt="">
-        <div class="fourTitle">Experience:</div>
+        <div class="fourTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Experience:</div>
         <div class="fourText">
           <div class="fourWrap">
             <ul class="item-list">
@@ -68,9 +68,9 @@
     	</div>
     	<div class="swiper-slide page5 ">
     		<img src="./images/5.jpg" alt="">
-        <div class="fiveTitle">Demo:</div>
+        <div class="fiveTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Demo:</div>
         <div class="fiveText">
-          <div class="fiveWrap">
+          <div class="fiveWrap ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s">
             <ul>
               <li class="pic1">
                 <div class="txt">
@@ -102,22 +102,31 @@
     	</div>
     	<div class="swiper-slide page6 ">
     		<img src="./images/6.jpg" alt="">
-        <div class="sixTitle">Contact me:</div>
-        <div class="sixText">
-            <div class="line1"></div>
-            <span>学习是一个充实愉悦的过程</span><br>
-            <span>喜欢尝试，期待新鲜事物</span><br>
-            <span>前端即兴趣，兴趣即未来</span><br>
-            <span>行路有良友，便是捷径</span><br>
-            <span>期待有机会与您共事！</span>
-            <div class="line2"></div>
+        <div class="sixTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Contact me:</div>
+        <div class="sixText ">
+            <div class="line1 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s"></div>
+            <span class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s">学习是一个充实愉悦的过程</span><br>
+            <span class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="3s">喜欢尝试，期待新鲜事物</span><br>
+            <span class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="5s">前端即兴趣，兴趣即未来</span><br>
+            <span class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="7s">行路有良友，便是捷径</span><br>
+            <span class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="9s">期待有机会与您共事！</span>
+            <div class="line2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s"></div>
         </div>
     	</div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
-
+  
+  <!-- wow.js -->
+  <script src="./lib/wow.min.js"></script>
+  <!-- swiper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+  <script src="./lib/swiper.animate1.0.3.min.js"></script>
+  <!-- jquery.js -->
+  <script src="./lib/jquery-3.3.1.min.js"></script>
   <script>
+    //animate/wow
+    // new WOW().init();
     // Swiper
   	var swiper = new Swiper(".swiper-container",{
   		noSwiping: true,
@@ -127,6 +136,15 @@
     		clickable:true
   		},
   		mousewheel:true,
+      on:{
+        init: function(){
+          swiperAnimateCache(this); 
+          swiperAnimate(this); 
+        }, 
+        slideChangeTransitionEnd: function(){ 
+          swiperAnimate(this); 
+        } 
+      }
     })
     //旋转展示
     var items = document.querySelectorAll(".item");
