@@ -7,6 +7,8 @@
 	<meta name="keywords" content="个人简历,前端工程师">
   <!-- 个人CSS -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/loading.css">
+  <link rel="stylesheet" href="./css/rainbow.css">
   <!-- animate.css -->
   <link rel="stylesheet" href="./css/animate.min.css">
   <!-- swiper.css -->
@@ -19,11 +21,35 @@
     	<div class="swiper-slide page1 "><!-- swiper-no-swiping -->
     		<img src="./images/01.jpg" alt=""><span class="user-img"></span>
         <span class="oneTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Hello!</span>
+        <div class="loader-inner">
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+        </div>
         <p class="oneText">
             <span>我叫吴华庚</span><br>
             <span>一名前端开发工程师</span><br>
             <span class="email">287818624@qq.com</span>     
         </p>
+           <div class="loading">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
     	</div>
     	<div class="swiper-slide page2 ">
     		<img src="./images/2.jpg" alt="">
@@ -38,6 +64,7 @@
           <span>音频,评论,地图等都有涉及.</span><br>
           <span>有耐心,热爱编程,执行力,学习能力棒棒哒!</span>
         </p>
+        
     	</div>
     	<div class="swiper-slide page3 ">
     		<img src="./images/3.jpg" alt="">
@@ -54,14 +81,32 @@
     		<img src="./images/4.jpg" alt="">
         <div class="fourTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Experience:</div>
         <div class="fourText">
-          <div class="fourWrap">
-            <ul class="item-list">
-              <li class="item">腾讯</li>
-              <li class="item">新浪</li>
-              <li class="item">网易</li>
-              <li class="item">百度</li>
-              <li class="item">淘宝</li>
-              <li class="item">京东</li>
+           <div class="fourWrap ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s">
+            <ul>
+              <li class="pic1">
+                <div class="txt">
+                  <p class="p1">阿里巴巴</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="pic2">
+                <div class="txt">
+                  <p class="p2">腾讯网</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="pic3">
+                <div class="txt">
+                  <p class="p3">网易新闻</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="pic4">
+                <div class="txt">
+                  <p class="p4">新浪微博</p>
+                  <span></span>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -70,34 +115,7 @@
     		<img src="./images/5.jpg" alt="">
         <div class="fiveTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Demo:</div>
         <div class="fiveText">
-          <div class="fiveWrap ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s">
-            <ul>
-              <li class="pic1">
-                <div class="txt">
-                  <p class="p1">微信小程序</p>
-                  <span></span>
-                </div>
-              </li>
-              <li class="pic2">
-                <div class="txt">
-                  <p class="p2">网页小游戏</p>
-                  <span></span>
-                </div>
-              </li>
-              <li class="pic3">
-                <div class="txt">
-                  <p class="p3">淘宝网首页</p>
-                  <span></span>
-                </div>
-              </li>
-              <li class="pic4">
-                <div class="txt">
-                  <p class="p4">腾讯微博</p>
-                  <span></span>
-                </div>
-              </li>
-            </ul>
-          </div>
+          
         </div>
     	</div>
     	<div class="swiper-slide page6 ">
@@ -146,27 +164,13 @@
         } 
       }
     })
-    //旋转展示
-    var items = document.querySelectorAll(".item");
-    var deg = 360/items.length;
-    var r = Math.PI*(deg/360);
-    var zOffset = (items[0].offsetWidth/2)/Math.tan(r);
-    for(var i = 0; i<items.length;i++){
-    var item = items[i];
-    item.style.transform = "rotateY("+i*deg+"deg) translateZ("+(zOffset+20)+"px)";
-    }
-    var itemList = document.querySelector(".item-list");
-    var fourWrap = document.querySelector(".fourWrap");
-    var ulDeg = 0;
-    fourWrap.addEventListener("click", function(){
-      ulDeg+=deg;
-      itemList.style.transform = "rotateY("+ulDeg+"deg)";
-    });
     //手风琴
-    var liFive = $(".fiveWrap ul li");
-    liFive.on('mouseover',function() {
+    var liFour = $(".fourWrap ul li");
+    liFour.on('mouseover',function() {
       $(this).css({width: '600px'}).siblings().css({width: '100px'});
     });
+
+
   </script>
 </body>
 </html>

@@ -121,11 +121,11 @@
       margin-top: -320px;
     }
     .oneText{
-      width: 360px;
-      height: 180px;
+      width: 560px;
+      height: 260px;
       border-radius: 30px;
       background-color: rgba(235,235,241,0.5);
-    	font-size: 18px;
+    	font-size: 26px;
       font-family: "微软雅黑";
 		  position: absolute;
 		  color: #333;
@@ -133,7 +133,7 @@
       top: 50%;
       font-weight: 700;
       margin-top: 50px;
-      line-height: 40px;
+      line-height: 50px;
       box-shadow: 
         4px -4px 4px #333,
         -4px 4px 4px #333,
@@ -155,7 +155,7 @@
     }
     .oneText span{
       position: relative;
-      top: 30px;
+      top: 90px;
     }
     .oneText .email{
       color: #915035;
@@ -259,6 +259,16 @@
       font-size: 32px;
       color: #fff;
       position: absolute;
+      margin-left: -200px;
+    }
+    .fourText li{
+      border-radius: 10px;
+    }
+    .fourText .txt{
+      border-radius: 10px;
+    }
+    .fourText p{
+      margin-left: 21px;
     }
     .fiveTitle{
       text-shadow: 10px 12px 5px gray;
@@ -275,10 +285,7 @@
       font-size: 32px;
       color: #fff;
       position: absolute;
-    }
-    .fiveWrap{
-      position: relative;
-      left: -200px;
+      margin-left: -200px;
     }
     .sixTitle{
       text-shadow: 10px 12px 5px gray;
@@ -315,41 +322,7 @@
       margin-top: 30px;
     }
 
-    @keyframes fourAnim{
-      100%{
-        transform:  rotateX(0deg) rotateY(360deg)  rotateZ(0deg); 
-      }
-    }
     .fourWrap{
-      perspective:800px;
-      transform-style:preserve-3d;
-    }
-    .item-list{
-      width: 300px;
-      height: 160px;
-      margin: 100px auto;
-      position: relative;
-      top: 50px;
-      transform-style: preserve-3d;
-      transition:all 0.5s;
-      animation: fourAnim 30s linear 0s infinite alternate;
-    }
-    .item-list .item{
-      width: 300px;
-      height: 160px;
-      background-color: #000;
-      text-align: center;
-      line-height: 160px;
-      position: absolute;
-      border-radius: 20px;
-      opacity: 0.7;
-      box-shadow: 
-       4px -4px 10px yellowgreen,
-       -4px 4px 10px yellowgreen; 
-      cursor: pointer;
-    }
-
-    .fiveWrap{
       overflow: hidden;
         width: 1100px;
         height: 420px;
@@ -358,7 +331,7 @@
         cursor: pointer;
         position: relative;
     }
-    .fiveWrap li{
+    .fourWrap li{
       background-position: center center;
       background-repeat: no-repeat;
       height: 420px;
@@ -366,28 +339,28 @@
       float: left;
       transition:width 1s;
     }
-    .fiveWrap li span{
+    .fourWrap li span{
       position: absolute;
       top: 100px;
       margin-left: 100px;
     }
-    .pic1{
+    .fourWrap .pic1{
+      width: 100px;
+      background-color: rgba(163, 171, 220,0.5); 
+    }
+    .fourWrap .pic2{
+      width: 100px;
+      background-color: rgba(163, 171, 220,0.5); 
+    }
+    .fourWrap .pic3{
+      width: 100px;
+      background-color: rgba(163, 171, 220,0.5); 
+    }
+    .fourWrap .pic4{
       width: 600px;
       background-color: rgba(163, 171, 220,0.5); 
     }
-    .pic2{
-      width: 100px;
-      background-color: rgba(163, 171, 220,0.5); 
-    }
-    .pic3{
-      width: 100px;
-      background-color: rgba(163, 171, 220,0.5); 
-    }
-    .pic4{
-      width: 100px;
-      background-color: rgba(163, 171, 220,0.5); 
-    }
-    .txt{
+    .fourWrap .txt{
       background-color: #000;
       background: rgba(0,0,0,.5);
       border: 1px solid #999;
@@ -396,10 +369,10 @@
       width: 98px;
       float: left;
     }
-    .txt p{
+    .fourWrap .txt p{
       float: left;
-        color: #fff;
-        font-size: 18px;
-        width: 13px;
-        padding: 25px 25px 0 20px;
+      color: #fff;
+      font-size: 18px;
+      width: 13px;
+      padding: 25px 25px 0 20px;
     }
