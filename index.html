@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>前端工程师简历</title>
+	<title>Web前端工程师简历</title>
 	<link rel="shortcut icon" href="./favicon.ico" />
-	<meta name="keywords" content="个人简历,前端工程师">
+	<meta name="keywords" content="web前端,web前端个人简历,吴华庚的简历,web前端开发,web前端工程师,前端开发简历网站">
   <!-- 个人CSS -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/loading.css">
@@ -16,7 +16,7 @@
 
 </head>
 <body ondragstart="return false">
-	<div class="swiper-container">
+	<div class="swiper-container swiper1">
     <div class="swiper-wrapper">
     	<div class="swiper-slide page1 "><!-- swiper-no-swiping -->
     		<img src="./images/01.jpg" alt=""><span class="user-img"></span>
@@ -56,13 +56,14 @@
         <span class="twoTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">About me:</span>
         <p class="twoText ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s">
           <span>年龄: 28 坐标: 厦门</span><br><br>
-          <span>因为对前端很感兴趣,</span><br>
-          <span>所以自学了前端,</span><br>
+          <span>受身边的人影响,对前端很感兴趣,</span><br>
+          <span>早期自学了前端,</span><br>
           <span>是个代码强迫症患者.</span><br>
-          <span>负责过整个页面的前端开发,</span><br>
-          <span>还有移动端页面,PC端页面,商城,企业网站,视频,</span><br>
-          <span>音频,评论,地图等都有涉及.</span><br>
-          <span>有耐心,热爱编程,执行力,学习能力棒棒哒!</span>
+          <span>负责过网页的前端开发,</span><br>
+          <span>还有移动端页面,商城,企业网站,</span><br>
+          <span>媒体,评论等都有涉及.</span><br>
+          <span>有耐心,热爱编程,执行力,</span><br>
+          <span>学习能力棒棒哒!</span>
         </p>
         
     	</div>
@@ -115,7 +116,15 @@
     		<img src="./images/5.jpg" alt="">
         <div class="fiveTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Demo:</div>
         <div class="fiveText">
-          
+          <div class="swiper-container swiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background:skyblue;"><p>1</p>微信小程序</div>
+              <div class="swiper-slide" style="background:skyblue;"><p>2</p>淘宝首页</div>
+              <div class="swiper-slide" style="background:skyblue;"><p>3</p>天猫商城</div>
+              <div class="swiper-slide" style="background:skyblue;"><p>4</p>H5小游戏</div>
+              <div class="swiper-slide" style="background:skyblue;"><p>5</p>腾讯微博</div>
+            </div>
+          </div>
         </div>
     	</div>
     	<div class="swiper-slide page6 ">
@@ -143,14 +152,14 @@
   <!-- jquery.js -->
   <script src="./lib/jquery-3.3.1.min.js"></script>
   <script>
-    //animate/wow
+    // animate/wow
     // new WOW().init();
     // Swiper
-  	var swiper = new Swiper(".swiper-container",{
+  	var swiper1 = new Swiper(".swiper1",{
   		noSwiping: true,
 		  direction:'vertical',
 		  pagination: {
-    		el: '.swiper-pagination',
+    		el: '.swiper1 .swiper-pagination',
     		clickable:true
   		},
   		mousewheel:true,
@@ -164,13 +173,37 @@
         } 
       }
     })
-    //手风琴
+    // 手风琴
     var liFour = $(".fourWrap ul li");
     liFour.on('mouseover',function() {
       $(this).css({width: '600px'}).siblings().css({width: '100px'});
     });
-
-
+    // banner3
+    var swiper3 = new Swiper('.swiper3', {
+      autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+      },
+      loop: true, // 循环模式选项
+      effect : 'coverflow',
+      slidesPerView: 3,
+      centeredSlides: true,
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 10,
+        depth: 60,
+        modifier: 2,
+        slideShadows : true
+      },
+    });
+    var banner3 = document.querySelector(".swiper3");
+    banner3.addEventListener("mouseover", function(){
+      swiper3.autoplay.stop();
+    });
+  
+    banner3.addEventListener("mouseout", function(){
+      swiper3.autoplay.start();
+    });
   </script>
 </body>
 </html>

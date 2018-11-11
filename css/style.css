@@ -43,11 +43,11 @@
       padding: 0;
     }
 
-    .swiper-container {
+    .swiper1 {
       width: 100%;
       height: 100%;
     }
-    .swiper-slide {
+    .swiper1 .swiper-slide {
       position: relative;
       /*text-align: center;*/
       font-size: 18px;
@@ -69,7 +69,7 @@
       -webkit-align-items: center;
       align-items: center;
     }
-  	.swiper-container .swiper-pagination .swiper-pagination-bullet{
+  	.swiper1 .swiper-pagination .swiper-pagination-bullet{
   		width: 36px;
   		height: 36px;
   		opacity: 1;
@@ -83,31 +83,31 @@
   		background-position: center;
   		background-color: rgba(0,0,0,0.7);
   	}	
-  	.swiper-container .swiper-pagination .swiper-pagination-bullet-active{
+  	.swiper1 .swiper-pagination .swiper-pagination-bullet-active{
   		border:none;
   		background-color: rgba(0,0,0,0.7);
   	}
-  	.swiper-container .swiper-pagination span:nth-child(1).swiper-pagination-bullet-active{
+  	.swiper1 .swiper-pagination span:nth-child(1).swiper-pagination-bullet-active{
   		background-image: url(../images/homepage.png);
   		background-size: 24px 24px;	
   	}
-  	.swiper-container .swiper-pagination span:nth-child(2).swiper-pagination-bullet-active{
+  	.swiper1 .swiper-pagination span:nth-child(2).swiper-pagination-bullet-active{
   		background-image: url(../images/mine.png);
   		background-size: 24px 24px;
   	}
-  	.swiper-container .swiper-pagination span:nth-child(3).swiper-pagination-bullet-active{
+  	.swiper1 .swiper-pagination span:nth-child(3).swiper-pagination-bullet-active{
   		background-image: url(../images/energy.png);
   		background-size: 24px 24px;
   	}
-  	.swiper-container .swiper-pagination span:nth-child(4).swiper-pagination-bullet-active{
+  	.swiper1 .swiper-pagination span:nth-child(4).swiper-pagination-bullet-active{
   		background-image: url(../images/barrage.png);
   		background-size: 24px 24px;
   	}
-  	.swiper-container .swiper-pagination span:nth-child(5).swiper-pagination-bullet-active{
+  	.swiper1 .swiper-pagination span:nth-child(5).swiper-pagination-bullet-active{
   		background-image: url(../images/manage.png);
   		background-size: 24px 24px;
   	}
-  	.swiper-container .swiper-pagination span:nth-child(6).swiper-pagination-bullet-active{
+  	.swiper1 .swiper-pagination span:nth-child(6).swiper-pagination-bullet-active{
   		background-image: url(../images/mail.png);
   		background-size: 24px 24px;
   	}
@@ -194,7 +194,7 @@
       position: absolute;
       text-align: center;
       line-height: 30px;
-      font-size: 16px;
+      font-size: 23px;
       color: #fff;
       background-color: rgba(235,235,241,0.5);
       border-radius: 50%;
@@ -376,3 +376,16 @@
       width: 13px;
       padding: 25px 25px 0 20px;
     }
+
+    .swiper3 {
+      width: 1040px;
+      height: 280px;
+      position: absolute;
+      top: 30%;
+      left: -14%;
+    }
+    .swiper3 p{
+      font-size: 100px;
+    }
+
+    
