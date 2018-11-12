@@ -119,6 +119,7 @@
       position: absolute;
       top: 50%;
       margin-top: -320px;
+      z-index: 99;
     }
     .oneText{
       width: 560px;
@@ -135,12 +136,13 @@
       margin-top: 50px;
       line-height: 50px;
       box-shadow: 
-        4px -4px 4px #333,
-        -4px 4px 4px #333,
-        8px -8px 20px #333,
-        -8px 8px 20px #333;
+        4px -4px 30px #222,
+        -4px 4px 30px #222,
+        8px -8px 50px #222,
+        -8px 8px 50px #222;
       transform-style: preserve-3d;
       transform: perspective(500px) rotateY(0deg);
+      z-index: 99;
       
     }
     .oneText:hover{
@@ -177,6 +179,7 @@
         8px -8px 50px cyan,
         -8px 8px 50px cyan;
       animation: jump 1s linear 0s infinite alternate;
+      z-index: 99;
     }
     .twoTitle{
       text-shadow: 10px 12px 5px purple;
@@ -376,7 +379,14 @@
       width: 13px;
       padding: 25px 25px 0 20px;
     }
-
+    .swiper2{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    .loader-inner{
+      z-index: 99;
+    }
     .swiper3 {
       width: 1040px;
       height: 280px;
