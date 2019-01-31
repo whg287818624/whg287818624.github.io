@@ -51,7 +51,7 @@
       position: relative;
       /*text-align: center;*/
       font-size: 18px;
-      background: #fff;
+      background: linear-gradient(115deg, rgba(86, 216, 228,1) 5%,rgba(159, 1, 234,1) 95%);
       overflow: hidden;
       display: flex;
 		
