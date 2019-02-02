@@ -223,27 +223,63 @@
       margin-top: -300px;
     }
     .threeText{
-      width: 1200px;
-      font-size: 32px;
+      margin-top: 100px;
+      width: 800px;
+      height: 500px;
+      font-size: 22px;
       color: #fff;
       position: absolute;
       cursor: pointer;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-around;
+      transform-style: preserve-3d;
     }
     .block{
-      box-shadow: 16px 16px 50px skyblue;
-      width: 200px;
-      height: 300px;
-      border: 1px solid #999;
       text-align: center;
-      line-height: 300px;
-      border-radius: 100px;
+      border-radius: 10px;
+      backface-visibility: hidden;
+      transition: all 1s ease 0S;
+      perspective: 800px;
+      transform-style: preserve-3d;
+      transform: translateZ(500px);     
      }
-    .block:hover{
-      transform: translate(0,-20px);
+    .block:hover .show{
+      transform: rotateY(-180deg);
       color: cyan;
+    }
+    .block:hover .hiden{
+      transform: rotateY(0deg);
+      color: cyan;
+    }
+    .block>div {
+      box-shadow: 2px 2px 10px gold, 2px 2px 10px purple;
+      width: 150px;
+      height: 200px;
+      text-align: center;
+      background: rgba(0,0,0,.6);
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      transition: all 1s ease 0S;
+      backface-visibility: hidden;
+    }
+    .block .show{
+      position: relative;
+      display: block !important;
+    }
+    .block .hiden{
+      transform: rotateY(180deg);
+    }
+    .block strong{
+      display: block;
+      height: 25px;
+      margin: 50px auto 0;
+    }
+    .block img{
+      width: 50px;
+      height: 50px;
     }
     .fourTitle{
       text-shadow: 10px 12px 5px gray;
