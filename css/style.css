@@ -127,7 +127,7 @@
       border-radius: 30px;
       background-color: rgba(235,235,241,0.5);
     	font-size: 26px;
-      font-family: "微软雅黑";
+      font-family: "幼圆";
 		  position: absolute;
 		  color: #333;
       text-align: center;
@@ -135,11 +135,7 @@
       font-weight: 700;
       margin-top: 50px;
       line-height: 50px;
-      box-shadow: 
-        4px -4px 30px #222,
-        -4px 4px 30px #222,
-        8px -8px 50px #222,
-        -8px 8px 50px #222;
+      box-shadow: 0 0 70px #111;
       transform-style: preserve-3d;
       transform: perspective(500px) rotateY(0deg);
       z-index: 99;
@@ -190,26 +186,28 @@
       top: 50%;
       margin-top: -300px;
     }
-    .twoText{
-      box-shadow: 16px 16px 50px skyblue;
-      width: 400px;
+    .twoText{      
+      width: 600px;
       height: 400px;
       position: absolute;
       text-align: center;
       line-height: 30px;
-      font-size: 23px;
-      color: #fff;
-      background-color: rgba(235,235,241,0.5);
-      border-radius: 50%;
+      font-size: 18px;
+      color: #fff !important;
     }
     .twoText span{
       position: relative;
       top: 50px;
+      line-height: 39px;
+      background-color: #C81C88;
+      border-radius: 10px;
+      padding: 4px;
+      box-shadow: 0 0 70px #111;
+
     }
-    .twoText:hover{
-      transform: perspective(800px) translateZ(20px);
+    .twoText span:hover{
+      box-shadow: 0 0 70px pink;
       cursor: pointer;
-      color: cyan;
     }
     img{
       width: 100%;
