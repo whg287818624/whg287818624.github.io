@@ -96,18 +96,6 @@
        box-shadow: 0 0 70px gold, 0 0 70px purple;
        border-color: gold; 
     }
-    .swiper1 .top-nav .n2{
-      width: 100px;
-      height: 100px;
-      position: fixed;
-      top: 200px;
-      left: 100px;
-    }
-    .swiper1 .top-nav .n3{
-      position: fixed;
-      top: 300px!important;
-      left: 100px!important;
-    }
     .swiper1 .top-nav img{
       border-radius: 50%;
     }
