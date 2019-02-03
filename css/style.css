@@ -86,7 +86,6 @@
       line-height: 100px;
       font-size: 32px;
       color: #fff;
-      border: 2px solid cyan;
       box-shadow: 0 0 70px cyan, 0 0 70px cyan;
       cursor: pointer;
       transform: rotate(0deg);
