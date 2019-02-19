@@ -408,12 +408,18 @@
 
     .fourWrap{
       overflow: hidden;
-        width: 1100px;
-        height: 420px;
-        margin: 0 auto;
-        padding-top: 70px;
+        width: 900px;
+        height: 280px;
+        margin: 100px auto;
+        padding: 70px 0 0 70px;
         cursor: pointer;
         position: relative;
+        background-color: rgba(163, 171, 220,0.5);
+        border-radius: 30px;
+        color: purple;
+        box-shadow: 0 0 70px #111;
+        /*font-size: 26px;*/
+        text-shadow: 10px 12px 5px cyan;
     }
     .fourWrap li{
       background-position: center center;
@@ -469,14 +475,19 @@
       z-index: 99;
     }
     .swiper3 {
-      width: 1040px;
+      width: 1260px;
       height: 280px;
       position: absolute;
       top: 30%;
-      left: -14%;
+      left: -32%;
     }
-    .swiper3 p{
-      font-size: 100px;
+    .swiper3 span{
+      position: absolute;
+      background-color: #999;
+      padding: 5px;
+      font-size: 26px;
+      opacity: 0.8;
+      border-radius: 10px;
     }
 
     
