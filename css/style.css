@@ -489,5 +489,9 @@
       opacity: 0.8;
       border-radius: 10px;
     }
+    .link{
+      position: absolute;
+      margin-top: 40px;
+    }
 
     
