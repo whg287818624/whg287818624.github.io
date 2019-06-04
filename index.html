@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Web前端工程师简历</title>
 	<link rel="shortcut icon" href="./favicon.ico" />
-  <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+  <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <--></-->
 	<meta name="keywords" content="web前端,web前端个人简历,吴华庚的简历,web前端开发,web前端工程师,前端开发简历网站">
   <!-- 个人CSS -->
   <link rel="stylesheet" href="./css/style.css">
@@ -22,16 +22,15 @@
     <div class="top-nav"><img src="./images/16.jpg" alt=""></div>
     <div class="swiper-wrapper">
     	<div class="swiper-slide page1 "><!-- swiper-no-swiping -->
-        <div class="swiper-container swiper2"> <!-- swiper2 -->
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/01.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/02.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/03.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/04.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/05.jpg" alt=""></div>
+          <div id="block">
+              <ul id="ul_list">
+                <li><img src="./images/01.jpg" alt=""></li>
+                <li><img src="./images/02.jpg" alt=""></li>
+                <li><img src="./images/03.jpg" alt=""></li>
+                <li><img src="./images/04.jpg" alt=""></li>
+                <li><img src="./images/05.jpg" alt=""></li>
+              </ul>
           </div>
-          
-        </div>
     		<!-- <img src="./images/01.jpg" alt=""> --><span class="user-img"></span>
         <span class="oneTitle ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s">Hello!</span>
         <div class="loader-inner">
@@ -202,6 +201,7 @@
   <script src="./lib/swiper.animate1.0.3.min.js"></script>
   <!-- jquery.js -->
   <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="./lib/slider.js"></script>
 
   <script type="text/javascript">
   
@@ -229,15 +229,15 @@
       }
     })
 
-    var swiper2 = new Swiper('.swiper2', {
-      autoplay:{
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      loop: true,
-      effect: "fade",
-      freeModeMomentumRatio : 5,
-    })
+    // var swiper2 = new Swiper('.swiper2', {
+    //   autoplay:{
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //   },
+    //   loop: true,
+    //   effect: "fade",
+    //   freeModeMomentumRatio : 5,
+    // })
 
     // 手风琴
     // var liFour = $(".fourWrap ul li");

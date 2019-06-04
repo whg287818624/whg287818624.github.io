@@ -494,4 +494,29 @@
       margin-top: 40px;
     }
 
+
+
+    #block{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    #ul_list{
+      margin: 0;
+      padding: 0;
+    }
+    #ul_list li{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      list-style: none;
+      display: none;
+    }
+    #ul_list li img{
+      width: 100%;
+      height: 100%;
+    }
+
     
