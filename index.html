@@ -923,7 +923,14 @@ $(document).ready(function() {
 		$(this).toggleClass('cs-hover');
 	});
 });
-document.getElementById('video01').play();
+//其他移动端浏览器只能让用户自己触发
+$(window).on('touchstart', function(){
+    $("video")[0].play();
+});
+// 兼容微信(微信可以自动播放)
+document.addEventListener("WeixinJSBridgeReady", function () {
+    $("video")[0].play();
+}, false);
 </script>
 
 <script>
