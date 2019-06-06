@@ -93,6 +93,11 @@
 		margin-left: -217.405px;
 		font-family: "楷体";
 	}
+	@media screen and (max-width: 700px) {
+    	.horde {
+        	display: none;
+    	}
+	}
 </style>
 </head>
 
@@ -260,7 +265,7 @@
     		   :src='videoUrl'
     		   x-webkit-airplay='allow'
     		   @ended='onPlayerEnded($event)'" type="video/mp4"></video>
-	<!-- <p class="horde">为了部落！</p> -->
+	<p class="horde">为了部落！</p>
 	<div style="clear:both;"></div>
 	<div class="container">
 		<div class="row">
