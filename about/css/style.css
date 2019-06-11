@@ -75,6 +75,7 @@
       align-items: center;
     }
     .swiper1 .top-nav{
+      background-color: #57adad;
       position: fixed;
       top: 100px;
       left: 100px;
